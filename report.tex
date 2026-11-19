@@ -33,31 +33,34 @@
 ]{hyperref}
 
 
+% Look for images in the figures/ folder, so \includegraphics{plot.pdf} works.
+\graphicspath{{figures/}}
+
 \begin{document}
 
 % metadata such as author, title, etc. are defined in cover.tex
-\include{cover}
+\include{frontmatter/cover}
 
 % Use Roman numerals for the page numbers of the title pages and table of
 % contents.
 \frontmatter
 
 % Include an optional title page.
-\include{title}
+\include{frontmatter/title}
 
-\include{preface}
+\include{frontmatter/preface}
 
 \tableofcontents
 
 % Use Arabic numerals for the page numbers of the chapters.
 \mainmatter%
 
-\include{introduction}
+\include{chapters/introduction}
 
 % Use letters for the chapter numbers of the appendices.
 \appendix
 
-\include{lorem-ipsum}
+\include{appendices/lorem-ipsum}
 
 % Chapters without numbers in the back
 \backmatter%

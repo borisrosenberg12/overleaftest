@@ -44,7 +44,7 @@
 \renewcommand{\CoverFront}{%
   \begin{tikzpicture}[overlay, inner sep=0pt]
     \node[anchor=south west] at (-\coverspinewidth, -\coverbleed)
-      {\pgfimage[width=\dimexpr(\oldpaperwidth+\coverspinewidth+2\coverbleed)\relax]{tank-below.jpg}};
+      {\pgfimage[width=\dimexpr(\oldpaperwidth+\coverspinewidth+2\coverbleed)\relax]{figures/tank-below.jpg}};
     \node[anchor=north west]% define upper left corner
       at (30mm, \oldpaperheight-30mm)
       {{\begin{minipage}%
@@ -117,7 +117,7 @@
   \begin{tikzpicture}[overlay, inner sep=0pt]
     % background image
     \node[anchor=south west] (bg) at (-\coverspinewidth, -2cm)
-      {\pgfimage[width=\dimexpr(\oldpaperwidth+\coverspinewidth+2\coverbleed)\relax]{tank-overview.jpg}};
+      {\pgfimage[width=\dimexpr(\oldpaperwidth+\coverspinewidth+2\coverbleed)\relax]{figures/tank-overview.jpg}};
     % darken the top so that the text is more visible
     \tikzfading[name=fade down, top color=transparent!50, bottom color=transparent!100]
     \fill[black, path fading=fade down] (bg.north west) rectangle (bg.east);
